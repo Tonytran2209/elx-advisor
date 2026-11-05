@@ -1,0 +1,35 @@
+/* Stable model hosts at all breakpoints. Canvas backing size is managed in JS. */
+.div-block-3214222238932 { min-width: 0; }
+.div-block-3214222238933 { flex: 1 1 45%; min-width: 0; width: 45%; }
+.code-embed-12 { width: 100%; }
+#three-canvas-3 { width: 100% !important; height: auto !important; aspect-ratio: 1 / 1; touch-action: pan-y; }
+@media (max-width: 991px) {
+  .page-wrapper { overflow-x: clip; }
+  .canvas-wrapper, .canvas-wrapper-2, .canvas-wrapper-3 { width: 100%; height: auto; min-height: 0; background-attachment: scroll; overflow: hidden; }
+  .div-block-32142222389 { padding: 0 20px; width: 100%; min-width: 0; }
+  .div-block-32142222390, .div-block-3214222238926, .div-block-3214222238931 {
+    display: flex; flex-direction: column; align-items: stretch; gap: 28px;
+    width: 100%; height: auto; padding: 48px 0;
+  }
+  .page-wrapper .heading-1 { font-size: clamp(38px, 8vw, 64px); line-height: 1.08; overflow-wrap: normal; word-break: normal; }
+  .page-wrapper .heading-3 { font-size: clamp(23px, 4.8vw, 32px); line-height: 1.2; }
+  ._3d-body-text { font-size: 17px; line-height: 1.55; }
+  .title-container-1, .title-container-2, .info-container, .image-container-1,
+  .div-block-3214222238932.max-w, .heading-1.max-w, .heading-3.text-color.max-w, ._3d-body-text.max-w {
+    width: 100%; max-width: 100%; min-width: 0;
+  }
+  .title-container-1, .title-container-2, .div-block-3214222238932 { gap: 24px; }
+  .div-block-3214222238924 { display: flex; flex-wrap: wrap; gap: 12px; }
+  .canvas-wrapper { display: flex; flex-direction: column; }
+  .code-embed-9, .code-embed-10 {
+    position: relative; inset: auto; width: 100%; height: clamp(300px, 85vw, 440px); flex: none;
+  }
+  #three-canvas, #three-canvas-2 { display: block; width: 100% !important; height: 100% !important; }
+  .image-container-1 { order: 2; }
+  .script-card { position: relative; width: 100%; padding: 20px; }
+  .slider-container { padding-bottom: 64px; }
+  .div-block-3214222238933 { flex: none; align-self: stretch; width: 100%; align-items: center; }
+  .code-embed-12 { width: 100%; height: clamp(320px, 95vw, 520px); }
+  #three-canvas-3 { width: 100% !important; height: 100% !important; aspect-ratio: auto; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
