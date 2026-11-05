@@ -1,8 +1,6 @@
-/* Stable model hosts at all breakpoints. Canvas backing size is managed in JS. */
-.div-block-3214222238932 { min-width: 0; }
-.div-block-3214222238933 { flex: 1 1 45%; min-width: 0; width: 45%; }
-.code-embed-12 { width: 100%; }
-#three-canvas-3 { width: 100% !important; height: auto !important; aspect-ratio: 1 / 1; touch-action: pan-y; }
+/* Original desktop canvas layout. Mobile overrides are scoped below. */
+.canvas-wrapper-3 { width: 100%; max-width: 100%; position: relative; overflow: hidden; }
+#three-canvas-3 { position: relative; display: block; width: 90% !important; height: auto !important; aspect-ratio: 4 / 3; pointer-events: auto; }
 @media (max-width: 991px) {
   .page-wrapper { overflow-x: clip; }
   .canvas-wrapper, .canvas-wrapper-2, .canvas-wrapper-3 { width: 100%; height: auto; min-height: 0; background-attachment: scroll; overflow: hidden; }
@@ -30,6 +28,6 @@
   .slider-container { padding-bottom: 64px; }
   .div-block-3214222238933 { flex: none; align-self: stretch; width: 100%; align-items: center; }
   .code-embed-12 { width: 100%; height: clamp(320px, 95vw, 520px); }
-  #three-canvas-3 { width: 100% !important; height: 100% !important; aspect-ratio: auto; }
+  #three-canvas-3 { width: 100% !important; height: 100% !important; aspect-ratio: auto; touch-action: pan-y !important; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
